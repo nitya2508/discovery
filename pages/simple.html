@@ -1,0 +1,246 @@
+<html>
+<head>
+<title>Discovery</title>
+<link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+<div class="header">
+<div class="video1">
+<video src="../assests/homev.mp4" data-length="" muted="" loop="" autoplay="" playsinline=""></video>
+</div>
+<div class="container">
+<nav>
+<a href="#">About DLC</a>
+<a href="#">Our Worlds</a>
+<a href="#">Experence</a>
+<a href="#">Gallery</a>
+<a href="#">Press</a>
+</nav>
+</div>
+<div class="section">
+<h1>Discover</h1>
+<h1>your World</h1>
+</div>
+<div class="section1">
+<h2>North Shore Preserve</h2>
+<h3>Scroll to explore</h3>
+</div>
+</div>
+<div class="container1">
+<div class="head">
+<h1>Welcome to</h1>
+<h1>our world</h1>
+</div>
+<div class="head1">
+<p>Discover the unique atmosphere of our private </p>
+<p>residential club communities. Once experienced. Never </p>
+<p>forgotten. This is classic, comfortable, modern living in </p>
+<p>nature’s most spectacular settings worldwide.</p>
+<p>Reassuringly exclusive. Generously welcoming. Find</p>
+<p>your unique world – a place where families love to be; </p>
+<p>creating unforgettable moments, together. </p>
+</div>
+<div class="image1">
+<img src="../assests/img2.jpg">
+</div>
+<div class="image2">
+<img src="../assests/img3.jpg">
+</div>
+</div>
+<div class="imgsection">
+<div class="image3">
+<img src="../assests/img6.jpg">
+</div>
+<div class="image3">
+<img src="../assests/img5.jpg">
+</div>
+<div class="image3">
+<img src="../assests/img4.jpg">
+</div>
+</div>
+<div class="footer">
+
+</div>
+</body>
+</html>
+* {
+margin: 0;
+padding: 0;
+}
+.header{
+width: 100vw;
+height: 100vh;
+/* border: 2px solid green; */
+}
+
+video{
+/* border: 2px solid black; */
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.container{
+/* border: 2px solid yellow; */
+display:flex;
+position: relative;
+bottom: 90%;
+justify-content: flex-end;
+margin-right: 20%;
+}
+nav a{
+/* border: 2px solid green; */
+margin: 10px;
+padding: 10px;
+text-decoration: none;
+color: white;
+}
+.section{
+/* border: 2px solid green; */
+position: relative;
+bottom: 65%;
+margin-left: 20%;
+}
+.section h1{
+font-size: 60px;
+color: white;
+}
+.section1{
+/* border: 2px solid green; */
+position: relative;
+bottom: 45%;
+margin-left: 10%;
+
+}
+h2,h3{
+color: white;
+}
+h2{
+font-size: 25px;
+/* border: 2px solid red; */
+margin: 10px;
+}
+h3{
+font-size: 15px;
+margin: 10px;
+}
+.container1{
+display: flex;
+flex-direction: column;
+width: 100vw;
+height: 180vh;
+background-image: url('../assests/img1.jpg');
+border: 2px solid red;
+background-position: center;
+
+}
+.image1{
+border: 2px solid black;
+display: flex;
+justify-content: flex-end;
+height: 75%;
+margin-top: 10%;
+margin-right: 10%;
+}
+.image1 img{
+height: 122%;
+width: 30%;
+}
+.image2 img{
+height: 100%;
+width: 30%;
+}
+.image2{
+border: 2px solid blue;
+display: flex;
+align-items: flex-end;
+margin-left: 8%;
+
+}
+.head{
+border: 2px solid greenyellow;
+
+}
+.imgsection{
+width: 100vw;
+height: 100vh;
+border: 2px solid green;
+display: flex;
+flex-direction: row;
+
+}
+.image3{
+border: 2px solid blue;
+width: 40%;
+height: 100%;
+}
+.image3 img{
+border: 2px solid red;
+width: 100%;
+height: 100%;
+}
+.footer{
+width: 100vw;
+height: 80vh;
+background-color: black;
+}
+
+
+window.addEventListener('DOMContentLoaded', function () {
+    console.log('ss')
+let a = [{windspeed : 12 , name : "India", temp : 32},
+{windspeed : 42 , name : "New Zealand", temp : 12}]
+//     let arr  =[{title : 'aaa', desc :"sss"},{title : 'aaa', desc :"sss"}
+// ,{title : 'aaa', desc :"sss"},{title : 'aaa', desc :"sss"}]
+
+let count = 0;
+let button = document.getElementById('next');
+let name = document.querySelector('.actualName')
+let prev = document.getElementById('prev')
+
+console.log("ssss",a[0].name)
+name.innerHTML = a[0].name
+button.addEventListener('click', function () {
+        if(count < 1) {
+            count = count +1;
+        }
+        name.innerHTML = a[count].name
+})
+
+prev.addEventListener('click', function () {
+    if(count>0) {
+        count = count -1;
+    }
+    name.innerHTML = a[count].name
+})
+
+
+
+
+})
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>

@@ -1,0 +1,75 @@
+.tech-slideshow {
+    /* border: 5px solid orange; */
+    height: 70vh;
+    width: 100vw;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .tech-slideshow > div {
+    /* border: 5px solid green; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    height: 70vh;
+    width: 800vw;
+    /* background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/collage.jpg); */
+    position: relative;
+    top: 0;
+    left: 0;
+    /* height: 100%; */
+    transform: translate3d(0, 0, 0);
+  }
+  .tech-slideshow .mover-1 {
+    animation: moveSlideshow 140s linear infinite;
+  }
+  .image{
+    /* border: 2px solid blue; */
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 400px;
+    /* height: 500px; */
+    height: 550px;
+    margin-left: 15px;
+}
+.mover-1 img{
+    width: 100%;
+    height: 100%;
+   
+    /* border: 2px solid yellow; */
+}
+.mover-1 h1{
+    /* border: 10px solid yellow; */
+    /* margin: 5%; */
+    font-family: gt-sectra;
+    position: relative;
+    font-size: 30px;
+    margin-left: 0px;
+    color:white;
+    bottom: 25%;
+}
+.mover-1 h1 small{
+    color:white;
+    /* font-family: "Lucida Console", "Courier New", monospace; */
+    font-family: gt-sectra;
+    font-size: 20px;
+    /* border: 2px solid red; */
+    /* margin-top: 90px; */
+}
+  /* .tech-slideshow .mover-2 {
+    /* opacity: 0; */
+    /* transition: opacity 0.5s ease-out; */
+    /* background-position: 0 -200px; */
+    /* animation: moveSlideshow 15s linear infinite; */
+  /* } */
+  /* .tech-slideshow:hover .mover-2 {
+    opacity: 1;
+  } */
+  
+  @keyframes moveSlideshow {
+    100% { 
+      transform: translateX(-66.6666%);  
+    }
+  }
